@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favlogo.png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9TD2DQVHP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-N9TD2DQVHP');
+</script>
+    <title>Order Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #28a745; /* Green color */
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #28a745; /* Green color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .tick-icon {
+            width: 50px; /* Size of the tick icon */
+            height: 50px;
+            fill: #28a745; /* Green color for the tick */
+            margin-bottom: 20px;
+        }
+        .container img{
+            width: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="tick.png" alt="tick">
+        <h1>Order Submitted!</h1>
+        <p>Your order has been successfully submitted.</p>
+        <p>Our team will contact you at your provided phone number.</p>
+        <button onclick="window.history.back();">Back</button>
+    </div>
+</body>
+</html>
