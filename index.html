@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favlogo.png">
+    <title>A&H Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="" onclick="list(event)">Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <div id="list">
+        <button onclick="closelist()" id="lbu">&#10006;</button>
+        <h3>Categories</h3>
+        <div class="listitems">
+            <button onclick="showAlert('This service is currently not available')">Clothing</button>
+            <button onclick="showAlert('This service is currently not available')">Watches</button>
+            <button onclick="showAlert('This service is currently not available')">Cosmetics</button>
+            <button onclick="showAlert('This service is currently not available')">Jewllery</button>
+            <button onclick="showAlert('This service is currently not available')">Electronics</button>
+        </div>
+    </div>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage(-1)" id="reel">&#10094;</button>
+        <div class="images">
+            <div class="image active" src="bannerandroid.png" onclick="location.href='p15.html'"></div>
+            <div class="image" src="bannerandroid.png" onclick="location.href='p15.html'"></div>
+            <div class="image" src="bannerandroid.png" onclick="location.href='p15.html'"></div>
+            <div class="image" src="bannerandroid.png" onclick="location.href='p15.html'"></div>
+        </div>
+        <button class="next" onclick="changeImage(1)" id="reel">&#10095;</button>
+    </div>
+    <div class="daily">
+        <img src="bannerandroid.png" alt="">
+        <button>Buy Now</button>
+    </div>
+    <div class="bannerandroid">
+        <a href="p15.html">
+        <img src="bannerandroid.png" alt="img">
+    </a>
+    </div>
+    <div class="popular">
+    </div>
+    <h1 id="msi">Featured Products</h1>
+    <div class="firstitems">
+        <div class="fi">
+            <img src="p1.jpeg" alt="img">
+            <a href="p1.html">Jewllery Set (Golden and Red Colour)</a>
+            <h3>Rs 1490</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p1.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p2.jpeg" alt="img">
+            <a href="p2.html">White Pearls Golden Earrings</a>
+            <h3>Rs 890</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p2.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p3.jpeg" alt="img">
+            <a href="p3.html">Golden Earrings Wirh White Diamonds</a>
+            <h3>Rs 930</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p3.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p4.jpeg" alt="img">
+            <a href="p4.html">Dark Green Jewllery Set</a>
+            <h3>Rs 1360</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p4.html'">Check Out</button>
+        </div>
+    </div>
+    <!-- <h1 id="msi" class="swh">Sports and Wear</h1> -->
+    <div class="firstitems">
+        <div class="fi">
+            <img src="p5.jpeg" alt="img">
+            <a href="p5.html">Complete Red Jewllery Set</a>
+            <h3>Rs 1360</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button  onclick="location.href='p5.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p6.jpeg" alt="img">
+            <a href="p6.html">Red and Golden Jewllery Set</a>
+            <h3>Rs 1230</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p6.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p7.jpeg" alt="img">
+            <a href="p7.html">Green White Leaf Earrings</a>
+            <h3>Rs 840</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p7.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p8.jpeg" alt="img">
+            <a href="p8.html">Black Earrings with White Pearl</a>
+            <h3>Rs 840</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p8.html'">Check Out</button>
+        </div>
+    </div>
+    <div class="firstitems">
+        <div class="fi">
+            <img src="p9.jpeg" alt="img">
+            <a href="p9.html">Artificial White Jewllery Set</a>
+            <h3>Rs 1440</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p9.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p10.jpeg" alt="img">
+            <a href="p10.html">Artificial Golden Jewllery Set</a>
+            <h3>Rs 1530</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p10.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p11.jpeg" alt="img">
+            <a href="p11.html">Red Green Diamond Jewllery Set</a>
+            <h3>Rs 1220</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p11.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p12.jpeg" alt="img">
+            <a href="p12.html">Artificial Golden Necklace</a>
+            <h3>Rs 830</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p12.html'">Check Out</button>
+        </div>
+    </div>
+    <div class="firstitems">
+        <div class="fi">
+            <img src="p13.jpeg" alt="img">
+            <a href="p13.html">Artificial Golden Earrings</a>
+            <h3>Rs 730</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p13.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p14.jpeg" alt="img">
+            <a href="p14.html">Golden Diamonds Jewllery Set</a>
+            <h3>Rs 1470</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p14.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p15.jpeg" alt="img">
+            <a href="p15.html">Golden and Brown Jewllery Set</a>
+            <h3>Rs 1520</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p15.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p16.jpeg" alt="img">
+            <a href="p16.html">White Diamonds Golden Necklace</a>
+            <h3>Rs 880</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p16.html'">Check Out</button>
+        </div>
+    </div>
+    <div class="firstitems">
+        <div class="fi">
+            <img src="p17.jpeg" alt="img">
+            <a href="p17.html">Golden Artificial Earrings</a>
+            <h3>Rs 860</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p17.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p18.jpeg" alt="img">
+            <a href="p18.html">Orange Diamond Jewllery Set</a>
+            <h3>Rs 1460</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p18.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p19.jpeg" alt="img">
+            <a href="p19.html">Artificial Golden Earrings</a>
+            <h3>Rs 830</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p19.html'">Check Out</button>
+        </div>
+        <div class="fi">
+            <img src="p20.jpeg" alt="img">
+            <a href="p20.html">Silver Bracelet With Diamonds</a>
+            <h3>Rs 940</h3>
+            <p>Free delivery<i class="fa fa-truck" style="margin-left: .3rem; color: red;"></i></p>
+            <button onclick="location.href='p20.html'">Check Out</button>
+        </div>
+    </div>
+    <footer>
+        <ul class="footp">
+            <li><a href=""onclick="showAlert('This service is currently not available')">Services</a></li>
+            <li><a href="t&c.html">Terms&Conditions</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <div class="footl">
+        </div>
+        <div class="crc">
+            <p>&copy All Rights Reserved</p>
+            <p id="mail"><a href="mailto:ahenterprisespkofficial@gmail.com" style="text-decoration: none; color: rgb(206, 206, 206);">ahenterprisespkofficial@gmail.com</a></p>
+        </div>
+    </footer>
+    
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.images .image');
+        const totalImages = images.length;
+
+        function changeImage(direction) {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + totalImages) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        function autoChangeImage() {
+            changeImage(1);
+        }
+
+        setInterval(autoChangeImage, 3000);
+
+        function list(event){
+            event.preventDefault();
+            document.getElementById('list').style.display = 'block';
+        }
+        function closelist(){
+            document.getElementById('list').style.display = 'none';
+        }
+
+
+        function showAlert(message) {
+            alert(message);
+        }
+
+        
+    </script>
+</body>
+</html>
