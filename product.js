@@ -1,5 +1,5 @@
 document.getElementById('whatsapp-button').addEventListener('click', function() {
-    const phoneNumber = '923136605128'; // Replace with your phone number
+    const phoneNumber = '923291972996'; // Replace with your phone number
     const productTitle = document.getElementById('product-title').innerText;
     const productDetails = document.getElementById('product-details').innerText;
     const productId = document.getElementById('itemCode').value;
