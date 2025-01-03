@@ -5,7 +5,7 @@ document.getElementById('whatsapp-button').addEventListener('click', function() 
     const productId = document.getElementById('itemCode').value;
 
     // Create the message using backticks for template literals
-    const message = `I would like to buy the following product:\n\nTitle: ${productTitle}\nDetails: ${productDetails}\nValue: ${productId}`;
+    const message = `I would like to buy the following product:\n\nTitle: ${productTitle} \nProduct Id: ${productId}`;
     
     // URL encode the message
     const encodedMessage = encodeURIComponent(message);
