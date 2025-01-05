@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" type="image/x-icon" href="favlogo.png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9TD2DQVHP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-N9TD2DQVHP');
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ProductPage-AH Store</title>
+</head>
+<body>
+    <header class="header">
+        <button class="back-button" onclick="window.history.back();">Back</button>
+        <h1 class="header-title">Product Page</h1>
+    </header>
+    
+    <main class="product-container">
+        <img src="p25.jpeg" alt="Product Image" class="product-image">
+        <h2 class="product-title" id="product-title">Golden White Jwellery Set</h2>
+        <p class="product-price">1430 Pkr</p>
+        <p class="product-description" id="product-details">This is a brief description of the product. It highlights the key features and benefits.</p>
+        <button class="buy-whatsapp-button" id="whatsapp-button">Order on Whatsapp<i class="fa fa-whatsapp" style="margin-left: .4rem;"></i></button>
+        <button class="buy-now-button" onclick="order(event)">Buy Now</button>
+        <div class="prodvid">
+            <h4>Product Video Review: <a href="">Product Video</a></h4>
+        </div>
+    </main>
+    <div class="reviews">
+        <h2 id="headr">Reviews</h2>
+        <div class="review">
+            <p class="name">Usman Malik:</p><br>
+            <p>Very Nice Product.</p>
+        </div>
+        <div class="review">
+            <p class="name">Usman Malik:</p><br>
+            <p>Very Nice Product.</p>
+        </div>
+        <div class="review">
+            <p class="name">Usman Malik:</p><br>
+            <p>Very Nice Product.</p>
+        </div>
+    </div>
+    <div class="orderdetails" id="orderdetails">
+        <button onclick="closeorder()" id="lbu">&#10006;</button>    
+    <h1>Customer Details Form</h1>
+    <form id="customerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <!-- <label for="itemCode">Item Code:</label> -->
+        <input type="hidden" id="itemCode" name="itemCode" value="SHSU7005125P25" readonly><br><br>
+
+        <!-- <label for="date">Date:</label> -->
+        <input type="hidden" id="date" name="date" readonly><br><br>
+
+        <!-- Hidden fields for total price and profit -->
+        <input type="hidden" id="totalPrice" name="totalPrice" value="1430"> <!-- Set your total price here -->
+        <input type="hidden" id="profit" name="profit" value="380"> <!-- Set your profit here -->
+
+        <input type="submit" value="Submit" id="sub">
+    </form>
+</div>
+    <script>
+        // Set the current date in the date input field
+        document.getElementById('date').value = new Date().toISOString().split('T')[0];
+
+        document.getElementById('customerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const formData = new FormData(this);
+            fetch('https://script.google.com/macros/s/AKfycbz6MmJj_b3w6_g3Z5RPYEoV5MxnIA_u4orQM0vLIhGrt4WQtkL_uJH6OEp9z_RJu8FFaA/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // alert('Success: ' + data);
+                // Redirect to another HTML page after successful submission
+                window.location.href = 'ordersubmitted.html'; // Change this to your desired page
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        });
+    </script>
+    <script src="product.js"></script>
+</body>
+</html>
