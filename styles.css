@@ -330,11 +330,73 @@ footer{
 #mail{
   margin-top: .5rem;
 }
-
+.apply{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:7rem;
+  border: none;
+  border-radius: .6rem;
+  box-shadow: 0rem 0rem .8rem .2rem rgb(216, 216, 216);
+}
+.apply h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.apply button{
+  margin-top: .8rem;
+  width: 12rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(0, 115, 255);
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  }
+  .apply button:hover{
+    background-color: transparent;
+    color: rgb(0, 115, 255);
+    border: solid .1rem rgb(0, 115, 255);
+  }
 @media(max-width: 768px){
   *{
     margin: 0;
 }
+    .apply{
+  margin: auto;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height:9rem;
+  border: none;
+  border-radius: .6rem;
+  box-shadow: 0rem 0rem .8rem .2rem rgb(216, 216, 216);
+}
+.apply h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.apply button{
+  margin-top: .8rem;
+  width: 12rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(0, 115, 255);
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  }
+  .apply button:hover{
+    background-color: transparent;
+    color: rgb(0, 115, 255);
+    border: solid .1rem rgb(0, 115, 255);
+  }
 header{
     background-color: rgb(33, 33, 33);
     height: 4rem;
